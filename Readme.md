@@ -7,8 +7,6 @@
 First simulation of Flashcards app! This first flash card is of the word screen in Italian (lo schermo) :D
 
 ### App Walk-though
-`TODO://` Add the URL to your animated app walk-though `gif` in the image tag below. Make sure the gif actually renders and animates when viewing this README. (☝️ Remove this paragraph after after adding gif)
-
 
 
 <img src="https://i.imgur.com/WMMBVgP.gif" width=200><br>
