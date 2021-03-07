@@ -61,6 +61,22 @@ class ViewController: UIViewController {
             questionLabel.isHidden = true
         }
     }
+    
+    func updateFlashcard(question: String, answer: String, answerOne: String?, answerThree: String?) {
+        questionLabel.text = question
+        answer2Label.text = answer
+        answerLabel.text = answer
+        
+        optionOne.setTitle(answerOne, for: .normal)
+        optionTwo.setTitle(answer, for: .normal)
+        optionThree.setTitle(answerThree, for: .normal)
+        
+        optionOne.isHidden = false
+        optionTwo.isHidden = false
+        optionThree.isHidden = false
+        answerLabel.isHidden = true
+        
+    }
 
     
     @IBAction func didTapOptionOne(_ sender: Any) {
@@ -76,17 +92,15 @@ class ViewController: UIViewController {
         optionThree.isHidden = true
     }
     
-    /*  @IBAction func didTapOptionOne(_ sender: Any) {
-        optionOne.isHidden = true
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let navigationController = segue.destination as! UINavigationController
+        let creationController = navigationController.topViewController as! CreationViewController
+        creationController.flashcardsController = self
+        if segue.identifier == "EditSegue" {
+        creationController.initialQuestion = questionLabel.text
+        creationController.initialAnswer = answer2Label.text
+        }
     }
     
-    @IBAction func didTapOptionTwo(_ sender: Any) {
-        optionTwo.isHidden = true
-        answerLabel.isHidden = false
-    }
-    
-    @IBAction func didTapOptionThree(_ sender: Any) {
-        optionThree.isHidden = true
-    } */
 }
 
