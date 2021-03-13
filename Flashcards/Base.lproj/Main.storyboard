@@ -108,6 +108,31 @@
                                     <outletCollection property="gestureRecognizers" destination="QFu-ex-KPQ" appends="YES" id="sGq-aH-Qlc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goY-We-PIq">
+                                <rect key="frame" x="43" y="805" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Prev"/>
+                                <connections>
+                                    <action selector="didTapOnPrevButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ej-Hr-szh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Sf-yo-sKQ">
+                                <rect key="frame" x="345" y="805" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="didTapOnNextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XoQ-au-TH6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laX-tc-RTa">
+                                <rect key="frame" x="20" y="48" width="54" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="❌"/>
+                                <connections>
+                                    <action selector="didTapOnDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JCF-6N-zEe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -116,9 +141,11 @@
                         <outlet property="answer2Label" destination="oh1-hz-Xy6" id="gQK-A8-sc6"/>
                         <outlet property="answerLabel" destination="NDH-rZ-ymn" id="GED-6s-rJc"/>
                         <outlet property="flashcard" destination="fPb-Aq-35D" id="xrx-Ko-h9d"/>
+                        <outlet property="nextButton" destination="4Sf-yo-sKQ" id="zqa-Np-S9x"/>
                         <outlet property="optionOne" destination="njx-BC-JEN" id="7uW-aj-CUp"/>
                         <outlet property="optionThree" destination="I1y-k6-JlJ" id="6HT-gG-nQy"/>
                         <outlet property="optionTwo" destination="RYr-kG-fKJ" id="2WY-Y6-JMF"/>
+                        <outlet property="prevButton" destination="goY-We-PIq" id="wue-n4-c2B"/>
                         <outlet property="questionLabel" destination="bRD-UP-lUl" id="xpW-j6-mJu"/>
                     </connections>
                 </viewController>

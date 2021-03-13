@@ -9,39 +9,32 @@ import UIKit
 
 class CreationViewController: UIViewController {
     
-    
     @IBOutlet weak var questionTextField: UITextField!
-    
     @IBOutlet weak var answerTextField: UITextField!
     
-    
     @IBOutlet weak var answerOneTextField: UITextField!
-    
     @IBOutlet weak var answerThreeTextField: UITextField!
     
     var flashcardsController: ViewController!
     var initialQuestion: String?
     var initialAnswer: String?
-    
+    var initialAnswerOne: String?
+    var initialAnswerThree: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         questionTextField.text = initialQuestion
         answerTextField.text = initialAnswer
-        
+        answerOneTextField.text = initialAnswerOne
+        answerThreeTextField.text = initialAnswerThree
     }
-    
-
     @IBAction func didTapOnCancel(_ sender: Any) {
         dismiss(animated: true)
     }
-    
     @IBAction func didTapOnDone(_ sender: Any) {
         
         let questionText = questionTextField.text
-        
         let answerText = answerTextField.text
-        
         let answerOneText = answerOneTextField.text
         let answerThreeText = answerThreeTextField.text
         
@@ -54,7 +47,12 @@ class CreationViewController: UIViewController {
         }
         else
         {
-            flashcardsController.updateFlashcard(question: questionText!, answer: answerText!, answerOne: answerOneText!, answerThree: answerThreeText!)
+            var isExisting = false
+            if initialQuestion != nil{
+                isExisting = true
+            }
+            
+            flashcardsController.updateFlashcard(question: questionText!, answer: answerText!, answerOne: answerOneText!, answerThree: answerThreeText!, isExisting: isExisting)
         
         dismiss(animated: true)
         }
