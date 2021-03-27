@@ -5,7 +5,7 @@ Flashcards app is now spruced up with animations and cleaner design, and functio
 
 ### App Walk-though
 
-<img src="YOUR_GIF_URL_HERE" width=200><br>
+<img src="https://github.com/cake7914/Flashcards/blob/main/CodepathIOSLab4.gif" width=200><br>
 
 ## Required
 - [x] User should see the app icon 
