@@ -3,7 +3,7 @@
 ### App Description
 Flashcards app is now spruced up with animations and cleaner design, and functions for different phone sizes!
 
-### App Walk-though
+### App Walk-through
 
 <img src="https://github.com/cake7914/Flashcards/blob/main/CodepathIOSLab4.gif" width=200><br>
 
@@ -24,7 +24,7 @@ Flashcards app is now spruced up with animations and cleaner design, and functio
 ### App Description
 Flashcards app now saves data!
 
-### App Walk-though
+### App Walk-through
 
 <img src="https://github.com/cake7914/Flashcards/blob/main/CodepathIOSLab3.gif" width=200><br>
 
@@ -42,7 +42,7 @@ Flashcards app now saves data!
 ### App Description
 The flashcards app now allows the user to edit existing flashcards and create new flashcards!
 
-### App Walk-though
+### App Walk-through
 
 <img src="https://github.com/cake7914/Flashcards/raw/main/CodepathIOSLab2.gif" width=200><br>
 
@@ -66,7 +66,7 @@ The flashcards app now allows the user to edit existing flashcards and create ne
 
 First simulation of Flashcards app! This first flash card is of the word screen in Italian (lo schermo) :D
 
-### App Walk-though
+### App Walk-through
 
 
 <img src="https://i.imgur.com/WMMBVgP.gif" width=200><br>
